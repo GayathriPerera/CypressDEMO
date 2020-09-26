@@ -1,0 +1,20 @@
+{
+  "env": {
+    "url1": "https://www.wasi.lk",
+    "url2": "https://www.google.com"
+  
+  }, 
+  
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/report.mochawesome-report",
+    "overwrite": true,
+    "html": true,
+    "json": true,
+    "timestamp": "mmddyyyy_HHMMss"
+  },
+  "screenshotsFolder": "cypress/screenshots",
+  "projectId": "2oegwk"
+  
+  
+}

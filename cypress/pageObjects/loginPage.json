@@ -1,0 +1,9 @@
+{
+    "btn_LoginButton": "#menu-extra-login",
+    "lnk_LoginLink": "li.active > .active",
+    "txt_username": "#username",
+    "txt_password": "#password",
+    "btn_Submit": ":nth-child(3) > .woocommerce-Button",           
+    "lbl_loggedInUsername": ".account-name > h3"
+    
+}

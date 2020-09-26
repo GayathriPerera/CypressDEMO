@@ -1,0 +1,5 @@
+{
+    "btn_AccountButton": ".extras-menu > .menu-item-account > :nth-child(1) > .extra-icon",
+   "btn_LogoutButton": ".extra-account > .extra-menu-item > :nth-child(2) > .logout > a"
+}
+

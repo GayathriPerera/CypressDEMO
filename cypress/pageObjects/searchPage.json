@@ -1,0 +1,9 @@
+{
+    "txt_Searchfield": ".header-extras > .product-extra-search > .products-search > .psearch-content > .search-wrapper > .search-field",
+    "btn_Search": ".header-extras > .product-extra-search > .products-search > .psearch-content > .search-submit",
+    "btn_BrowseWishlist" : "#icon-wishlist-contents > .mini-item-counter",
+    "lnk_AddToWishlist" : ".mf-wishlist-button > .yith-wcwl-add-to-wishlist > .yith-wcwl-add-button > .add_to_wishlist > span",
+    "lnk_Cart" : "//li[@class='extra-menu-item menu-item-cart mini-cart woocommerce']/a/i",
+    "btn_ViewCart": "//a[contains(text(),'View cart')]",
+    "dbc_ProductCat": "//select[@name='product_cat']"
+}

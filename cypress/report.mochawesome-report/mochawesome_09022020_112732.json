@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-09-02T05:55:26.784Z",
+    "end": "2020-09-02T05:57:32.747Z",
+    "duration": 125963,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "889536e5-6680-4849-9de2-f0ffa03e4277",
+      "title": "",
+      "fullFile": "cypress\\integration\\1.productSearch.spec.js",
+      "file": "cypress\\integration\\1.productSearch.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ec51605c-19f1-4d06-aa3e-197c6403b3f6",
+          "title": "Test Suit 1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Testcase_1: should login to the wasi.lk site and do a product search",
+              "fullTitle": "Test Suit 1 Testcase_1: should login to the wasi.lk site and do a product search",
+              "timedOut": null,
+              "duration": 90805,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"screenshots/1.productSearch.spec.js/Test Suit 1 -- Testcase_1: should login to the wasi.lk site and do a product search (failed).png\"",
+              "code": "cy.log(\"I am only in Test Case 1 \");\nTestmethod.open();\nTestmethod.login(); //Verify the logged in user's name\nCommonMethods.Assert(_loginPage[\"default\"].lbl_loggedInUsername).then(function ($selectedelement) {\n  expect($selectedelement).to.contain(_testdata[\"default\"].UserData.AssertText);\n});\nTestmethod.productSearch();\nTestmethod.clear();\nTestmethod.viewcart();\nTestmethod.Logout();",
+              "err": {
+                "message": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `60000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `60000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://www.wasi.lk/__cypress/runner/cypress_runner.js:151211:13)\n    at https://www.wasi.lk/__cypress/runner/cypress_runner.js:152163:16\n    at tryCatcher (https://www.wasi.lk/__cypress/runner/cypress_runner.js:10161:23)\n    at https://www.wasi.lk/__cypress/runner/cypress_runner.js:5283:41\n    at tryCatcher (https://www.wasi.lk/__cypress/runner/cypress_runner.js:10161:23)\n    at Promise._settlePromiseFromHandler (https://www.wasi.lk/__cypress/runner/cypress_runner.js:8096:31)\n    at Promise._settlePromise (https://www.wasi.lk/__cypress/runner/cypress_runner.js:8153:18)\n    at Promise._settlePromise0 (https://www.wasi.lk/__cypress/runner/cypress_runner.js:8198:10)\n    at Promise._settlePromises (https://www.wasi.lk/__cypress/runner/cypress_runner.js:8274:18)\n    at _drainQueueStep (https://www.wasi.lk/__cypress/runner/cypress_runner.js:4868:12)\n    at _drainQueue (https://www.wasi.lk/__cypress/runner/cypress_runner.js:4861:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://www.wasi.lk/__cypress/runner/cypress_runner.js:4877:5)\n    at Async.drainQueues (https://www.wasi.lk/__cypress/runner/cypress_runner.js:4747:14)\nFrom Your Spec Code:\n    at Object.open (https://www.wasi.lk/__cypress/tests?p=cypress\\integration\\1.productSearch.spec.js:1571:6)\n    at Context.eval (https://www.wasi.lk/__cypress/tests?p=cypress\\integration\\1.productSearch.spec.js:1459:16)",
+                "diff": null
+              },
+              "uuid": "a6141231-549d-4b91-a5ec-037e6d67be00",
+              "parentUUID": "ec51605c-19f1-4d06-aa3e-197c6403b3f6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a6141231-549d-4b91-a5ec-037e6d67be00"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 90805,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report.mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+      },
+      "version": "5.1.0"
+    }
+  }
+}
